@@ -24,7 +24,7 @@
   }
 
   body {
-    @apply font-space-mono text-text-dark;
+    @apply font-space-mono text-text-dark dark:text-white;
   }
 }
 

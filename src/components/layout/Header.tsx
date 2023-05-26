@@ -16,12 +16,12 @@ const Header = () => {
   const [lightMode, setLightMode] = useState(true);
 
   useEffect(() => {
+    themeModeRef?.current?.setSpeed(5);
     if (lightMode) {
       themeModeRef?.current?.goToAndStop(0, true);
     } else {
       themeModeRef?.current?.goToAndStop(100, true);
     }
-    console.log(themeModeRef?.current);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -36,6 +36,16 @@ const Header = () => {
     });
   };
 
+  const handleModeToggleComplete = () => {
+    const root = window.document.documentElement;
+    if (!lightMode) {
+      root.classList.add("dark");
+    }
+    if (lightMode) {
+      root.classList.remove("dark");
+    }
+  };
+
   return (
     <div>
       <Container>
@@ -43,7 +53,10 @@ const Header = () => {
           <div className="w-1/2 lg:w-1/6">
             <div className="flex items-end">
               <h1 className="text-3xl leading-none">
-                <Link href="/" className="text-text-dark hover:no-underline">
+                <Link
+                  href="/"
+                  className="text-text-dark dark:text-white hover:no-underline"
+                >
                   Sahariar
                 </Link>
               </h1>
@@ -56,10 +69,10 @@ const Header = () => {
                 <li key={link.id}>
                   <Link
                     href={link.link}
-                    className={`${
+                    className={`hover:text-primary ${
                       pathname === link.link
                         ? "text-primary"
-                        : "hover:text-primary text-text-dark"
+                        : "text-text-dark dark:text-white"
                     } hover:no-underline`}
                   >
                     {link.title}
@@ -77,6 +90,7 @@ const Header = () => {
                 lottieRef={themeModeRef}
                 autoplay={false}
                 onClick={handleModeChange}
+                onComplete={handleModeToggleComplete}
               />
               <Lottie
                 className="h-12 w-12 cursor-pointer lg:hidden"
