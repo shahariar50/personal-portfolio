@@ -8,10 +8,10 @@ const BannerSection = () => {
   return (
     <div>
       <Container>
-        <div className="flex py-40">
-          <div className="w-7/12">
-            <h2 className="text-4xl mb-4">Hi! I am</h2>
-            <h1 className="text-5xl mb-8">
+        <div className="flex flex-wrap py-20 lg:py-40">
+          <div className="w-full lg:w-8/12 xl:w-7/12 order-1 lg:order-0">
+            <h2 className="mb-2 lg:mb-4">Hi! I am</h2>
+            <h1 className="mb-4 lg:mb-8">
               Abdullah Al <span className="text-primary">Sahariar</span>
             </h1>
             <p className="max-w-[700px] mb-2">
@@ -21,14 +21,14 @@ const BannerSection = () => {
               new technologies, constantly seeking challenges to overcome and
               excel at.
             </p>
-            <p className="max-w-[700px] mb-8">
+            <p className="max-w-[700px] mb-4 lg:mb-8">
               Currently, I'm working as a SDE II (Frontend) at{" "}
               <Link href="https://shikho.com/" target="_blank">
                 Shikho Technologies Bangladesh Ltd
               </Link>
               .
             </p>
-            <ul className="flex gap-4 mb-8">
+            <ul className="flex gap-4 mb-4 lg:mb-8">
               <li>
                 <Image
                   height={40}
@@ -68,14 +68,14 @@ const BannerSection = () => {
               <Button>Contact Me</Button>
             </div>
           </div>
-          <div className="w-5/12">
+          <div className="w-full lg:w-4/12 xl:w-5/12 order-0 lg:order-1 lg:text-center mb-8">
             <div className="inline-block relative">
               <Image
                 height={400}
                 width={400}
                 src="/images/self1.jpg"
                 alt="sahariar"
-                className="mx-auto"
+                className="mx-auto max-w-[300px] lg:max-w-full"
               />
               <span className="absolute h-full w-full top-2 left-2 bg-primary -z-10 blur-sm opacity-50"></span>
             </div>

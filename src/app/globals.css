@@ -19,12 +19,19 @@
 } */
 
 @layer base {
+  h1 {
+    @apply text-4xl lg:text-5xl;
+  }
+  h2 {
+    @apply text-3xl lg:text-4xl;
+  }
+
   a {
     @apply no-underline text-primary hover:underline;
   }
 
   body {
-    @apply font-space-mono text-text-dark dark:text-white;
+    @apply font-space-mono text-text-dark dark:text-white text-sm lg:text-base;
   }
 }
 
