@@ -14,12 +14,19 @@ const BannerSection = () => {
             <h1 className="mb-4 lg:mb-8">
               Abdullah Al <span className="text-primary">Sahariar</span>
             </h1>
-            <p className="max-w-[700px] mb-2">
+            {/* <p className="max-w-[700px] mb-2">
               A passonate frontend developer, who has been immersed in the world
               of programming since 2018, dedicated to creating modern and
               interactive interfaces, thrive on learning and experimenting with
               new technologies, constantly seeking challenges to overcome and
               excel at.
+            </p> */}
+            <p className="max-w-[700px] mb-2">
+              A frontend developer with a passion for innovation, Specialize in
+              harnessing the potential of <strong>JavaScript</strong>,{" "}
+              <strong>TypeScript</strong>, <strong>ReactJS</strong>, and{" "}
+              <strong>Next.js</strong> to create dynamic and cutting-edge web
+              solutions.
             </p>
             <p className="max-w-[700px] mb-4 lg:mb-8">
               Currently, I'm working as a SDE II (Frontend) at{" "}
@@ -64,9 +71,7 @@ const BannerSection = () => {
                 </picture>
               </li>
             </ul>
-            <div>
-              <Button>Contact Me</Button>
-            </div>
+            <Button>Contact Me</Button>
           </div>
           <div className="w-full lg:w-4/12 xl:w-5/12 order-0 lg:order-1 lg:text-center mb-8">
             <div className="inline-block relative">
