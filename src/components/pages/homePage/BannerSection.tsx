@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const BannerSection = () => {
   return (
-    <div>
+    <section>
       <Container>
         <div className="flex flex-wrap py-20 lg:py-40">
           <div className="w-full lg:w-8/12 xl:w-7/12 order-1 lg:order-0">
@@ -82,7 +82,7 @@ const BannerSection = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 
