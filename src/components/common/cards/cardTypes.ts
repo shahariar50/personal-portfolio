@@ -3,4 +3,5 @@ export type SkillCardType = {
   logo?: string;
   name: string;
   experience: string;
+  category?: string;
 };
