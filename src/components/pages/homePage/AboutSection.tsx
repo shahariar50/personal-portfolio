@@ -5,12 +5,12 @@ import { GrFacebookOption, GrGithub, GrLinkedinOption } from "react-icons/gr";
 
 const AboutSection = () => {
   return (
-    <section className="pb-20">
+    <section className="pb-10 lg:pb-20">
       <Container>
-        <div className="mb-16">
+        <div className="mb-8 lg:mb-16">
           <h2 className="text-center">Want to know more about me?</h2>
         </div>
-        <div className="max-w-[1200px] mx-auto text-center mb-8">
+        <div className="max-w-[1200px] mx-auto text-center mb-4 lg:mb-8">
           <p>
             With an extensive professional background spanning over four years,
             I currently serve as a Frontend Software Development Engineer II
@@ -38,7 +38,7 @@ const AboutSection = () => {
           </p>
         </div>
         <div>
-          <h4 className="text-center mb-6">Connect me on:</h4>
+          <h4 className="text-center mb-3 lg:mb-6">Connect me on:</h4>
           <ul className="flex justify-center gap-4">
             <li>
               <Link

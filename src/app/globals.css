@@ -44,7 +44,7 @@
     @apply no-underline text-primary hover:underline;
   }
   p {
-    @apply mb-4;
+    @apply mb-2 lg:mb-4;
   }
 
   body {
