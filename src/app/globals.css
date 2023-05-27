@@ -37,7 +37,7 @@
 
 @layer components {
   .button.style1 {
-    @apply flex items-stretch bg-primary text-text-dark rounded-full h-12;
+    @apply flex items-center bg-primary text-text-dark rounded-full h-12;
   }
   .button.style1.size-md .button-text {
     @apply pl-6 pr-4 flex items-center transition-all duration-300;
@@ -45,13 +45,10 @@
   button.style1.size-md:hover .button-text {
     @apply pr-6;
   }
-  .button.style1 .button-icon-container {
-    @apply h-12 w-12 transition duration-300 rounded-full p-1;
+  .button.style1 .button-icon-wrapper {
+    @apply w-10 h-10 relative bg-text-dark rounded-full text-white ml-auto mr-1;
   }
-  .button.style1 .button-icon-container .button-icon-wrapper {
-    @apply w-10 h-10 relative bg-text-dark rounded-full text-white ml-auto;
-  }
-  .button.style1 .button-icon-container .button-icon-wrapper svg {
+  .button.style1 .button-icon-wrapper svg {
     @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
   }
 }
