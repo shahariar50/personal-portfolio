@@ -21,7 +21,7 @@ const BannerSection = () => {
               new technologies, constantly seeking challenges to overcome and
               excel at.
             </p> */}
-            <p className="max-w-[700px] mb-2">
+            <p className="max-w-[700px]">
               A frontend developer with a passion for innovation, Specialize in
               harnessing the potential of <strong>JavaScript</strong>,{" "}
               <strong>TypeScript</strong>, <strong>ReactJS</strong>, and{" "}
