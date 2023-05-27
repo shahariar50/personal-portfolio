@@ -6,11 +6,11 @@ import Link from "next/link";
 
 const BannerSection = () => {
   return (
-    <div>
+    <section>
       <Container>
         <div className="flex flex-wrap py-16 lg:py-40">
           <div className="w-full lg:w-8/12 xl:w-7/12 order-1 lg:order-0">
-            <h2 className="mb-2 lg:mb-4">Hi! I am</h2>
+            <h3 className="mb-2 lg:mb-4">Hi! I am</h3>
             <h1 className="mb-4 lg:mb-8">
               Abdullah Al <span className="text-primary">Sahariar</span>
             </h1>
@@ -21,7 +21,7 @@ const BannerSection = () => {
               new technologies, constantly seeking challenges to overcome and
               excel at.
             </p> */}
-            <p className="max-w-[700px] mb-2">
+            <p className="max-w-[700px]">
               A frontend developer with a passion for innovation, Specialize in
               harnessing the potential of <strong>JavaScript</strong>,{" "}
               <strong>TypeScript</strong>, <strong>ReactJS</strong>, and{" "}
@@ -87,7 +87,7 @@ const BannerSection = () => {
           </div>
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

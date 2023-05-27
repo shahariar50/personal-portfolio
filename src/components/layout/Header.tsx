@@ -52,7 +52,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           <div className="w-1/2 lg:w-1/6">
             <div className="flex items-end">
-              <h1 className="text-3xl leading-none">
+              <h1 className="text-3xl leading-none font-normal">
                 <Link
                   href="/"
                   className="text-text-dark dark:text-white hover:no-underline"
