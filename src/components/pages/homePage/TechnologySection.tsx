@@ -6,7 +6,7 @@ import { SKILL_LIST } from "./data";
 
 const TechnologySection = () => {
   return (
-    <section className="pb-10 lg:py-20">
+    <section className="py-10 lg:py-20">
       <Container>
         <div className="mb-8 lg:mb-16">
           <h2 className="text-center">Technologies I'm proficient in.</h2>

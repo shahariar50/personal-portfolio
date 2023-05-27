@@ -8,7 +8,7 @@ const BannerSection = () => {
   return (
     <section>
       <Container>
-        <div className="flex flex-wrap py-16 lg:py-40">
+        <div className="flex flex-wrap py-20 lg:py-40">
           <div className="w-full lg:w-8/12 xl:w-7/12 order-1 lg:order-0">
             <h3 className="mb-2 lg:mb-4">Hi! I am</h3>
             <h1 className="mb-4 lg:mb-8">
