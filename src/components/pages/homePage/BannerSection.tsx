@@ -14,13 +14,6 @@ const BannerSection = () => {
             <h1 className="mb-4 lg:mb-8">
               Abdullah Al <span className="text-primary">Sahariar</span>
             </h1>
-            {/* <p className="max-w-[700px] mb-2">
-              A passonate frontend developer, who has been immersed in the world
-              of programming since 2018, dedicated to creating modern and
-              interactive interfaces, thrive on learning and experimenting with
-              new technologies, constantly seeking challenges to overcome and
-              excel at.
-            </p> */}
             <p className="max-w-[700px]">
               A frontend developer with a passion for innovation, Specialize in
               harnessing the potential of <strong>JavaScript</strong>,{" "}

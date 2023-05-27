@@ -27,10 +27,11 @@ const ButtonGroup: React.FC<ButtonGroupType> = ({ onClick, buttonList }) => {
 
   useEffect(() => {
     setActive(buttonList[0].value);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <div className="flex flex-wrap gap-4 relative">
+    <div className="flex flex-wrap gap-2 lg:gap-4 relative">
       <span
         className="bg-primary absolute rounded-md transition-all duration-300 -z-10"
         ref={bgRef}
@@ -39,7 +40,7 @@ const ButtonGroup: React.FC<ButtonGroupType> = ({ onClick, buttonList }) => {
         <button
           className={`text-[#6e6e6e] ${
             active === button.value ? "active" : ""
-          } py-3 px-6 rounded-md`}
+          } py-2 lg:py-3 px-3 lg:px-6 rounded-md text-sm lg:text-base`}
           key={button.id}
           onClick={() => {
             setActive(button.value);
